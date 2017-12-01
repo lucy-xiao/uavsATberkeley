@@ -6,6 +6,7 @@
             box-sizing: border-box;
 }
 html, body {
+    background-color: black;
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
@@ -13,8 +14,47 @@ html, body {
     min-height: 100%;
 }
 
+.about-container {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 20px);
+}
+
+.header-container {
+    width: 400px;
+}
+
+.header {
+    position: relative;
+    left: -200px;
+    background-color: #333;
+    height: auto;
+    width: 600px;
+    color: #eee;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 3em;
+    top: 20px;
+}
+
 .hidden {
     opacity: 0;
+}
+
+.person-container {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.person-headshot {
+    width: 150px;
+    /*height: 200px;*/
+}
+
+.person-name {
+    color: #333;
 }
 
 .section {
@@ -23,26 +63,50 @@ html, body {
     background-color: #eee;
 }
 
-.section .header {
-    width: 200px;
+.section.about {
     height: auto;
-    font-size: 2em;
+    padding-bottom: 50px;
+}
+
+.section.sponsor {
+    background-color: #ccc;
 }
 
 .splash {
     background: url("../img/stadium-pano.jpg") no-repeat center center fixed;
     background-size: 250%;
     height: 100%;
+    opacity: .85;
+}
+
+.splash-presents {
+    position: relative;
+    color:#eee;
+    font-size: 2em;
+    top:20px;
+}
+
+.splash-content-container {
+    position: absolute;
+    width: auto;
+    text-align: center;
+    top: 20px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .splash-text {
-    color: white;
-    font-size: 144px;
-    position: absolute;
+    color: #eee;
+    font-size: 5em;
+    position: relative;
     width: 100%;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+    top: 20px;
+}
+
+.underline {
+    position: relative;
+    border-bottom: 1px solid #eee;
+    top:15px;
 }
