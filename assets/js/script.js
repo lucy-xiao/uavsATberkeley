@@ -42,7 +42,7 @@ $(document).ready( function() {
     //For animating heading slide right
     $(window).scroll( function(){
     
-        $('.hidden').each( function(i){
+        $('.hidden.left').each( function(i){
 
             let bottom_of_object = $(this).offset().top + $(this).outerHeight();
             let bottom_of_window = $(window).scrollTop() + parseInt($('.section').css("height"),10);

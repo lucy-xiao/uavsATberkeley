@@ -50,7 +50,6 @@ html, body {
 
 .person-headshot {
     width: 150px;
-    /*height: 200px;*/
 }
 
 .person-name {
@@ -69,11 +68,62 @@ html, body {
 }
 
 .section.sponsor {
-    background-color: #ccc;
+    background-color: #ddd;
+}
+
+.section.footer {
+    background-color: #333;
+    height: auto;
+}
+
+.section.footer input {
+    border-radius: 5px;
+    color: #333;
+    margin-right: 5px;
+    width: 200px;
+}
+
+.section.footer .left-container {
+    height: auto;
+    border-right: 2px solid #444;
+}
+
+.section.footer .left-container, .section.footer .right-container {
+    width: 50%;
+    float: left;
+}
+
+.section.footer input#mc-embedded-subscribe{
+    border-radius: 5px;
+    background-color: #01579B;
+    width: 200px;
+    color: #eee;
+    margin-right: 5px;
+}
+
+.section.footer .mailing-container, .section.footer .contact-container  {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    top: 10px;
+}
+
+.section.footer .contact-container {
+    text-align: center;
+}
+
+.section.footer .email, .section.footer .button {
+    margin-top: 10px;
+}
+
+.section.footer label, .section.footer .title {
+    color: #eee;
+    margin-right: 10px;
 }
 
 .splash {
-    background: url("../img/stadium-pano.jpg") no-repeat center center fixed;
+    background: url("../img/stadium-pano-min.jpg") no-repeat center center fixed;
     background-size: 250%;
     height: 100%;
     opacity: .85;
