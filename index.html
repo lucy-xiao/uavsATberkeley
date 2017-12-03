@@ -5,21 +5,40 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	</head>
 	<body>
+		<!-- <div id="loader-wrapper">
+		    <div id="loader"></div>
+		 
+		    <div class="loader-section section-left"></div>
+		    <div class="loader-section section-right"></div>
+		 
+		</div> -->
+		<div class="splash"></div>
 		<div class="section landing">
-			<div class="splash"></div>
+			
 			<div class="splash-content-container">
 				<div class="splash-text">UAVs@Berkeley</div>
 				<div class="underline"></div>
 				<div class="splash-presents">presents</div>
 			</div>
+			<img class="wdr" src="assets/img/wdr.png"/>
 			
 		</div>
 		<div class="section about">
 			<div class="header-container">
-				<div class="header hidden left">Organizers</div>
+				<div class="header hidden left" id="about">About</div>
 			</div>
 
-			<div class="about-container">
+			<div class="about text">
+				The Western Drone Regionals is a national collegiate drone racing championship that will be held at the University of California, Berkeley in February 2018. Join us to compete with teams from across the nation, explore the San Francisco Bay Area and attend a personal Career Fair with some of the best companies in the drone industry and Silicon Valley.
+			</div>
+			
+		</div>
+		<div class="section organizers">
+			<div class="header-container">
+				<div class="header hidden left" id="organizers">Organizers</div>
+			</div>
+
+			<div class="organizers-container">
 				<!-- <div class="person-container">
 					<img class="person-headshot" src=""></img>
 					<div class="person-name"></div>
@@ -27,9 +46,27 @@
 			</div>
 			
 		</div>
+		<div class="section gallery">
+			<div class="header-container">
+				<div class="header hidden left" id="gallery">Gallery</div>
+			</div>
+			<div class="gallery-container">
+				<img class="pic" id="drones" src="assets/img/drones.jpg"/>
+				<img class="pic" id="campenilli" src="assets/img/campenilli-top.jpg"/>
+				<img class="pic" id="courtyard" src="assets/img/courtyard.jpg"/>
+				<img class="pic" id="pano" src="assets/img/pano.jpg"/>
+			</div>
+		</div>
 		<div class="section sponsor">
 			<div class="header-container">
-				<div class="header hidden left">Sponsors</div>
+				<div class="header hidden left" id="sponsors">Sponsors</div>
+			</div>
+			<div class="sponsor-container">
+				<img class="sponsor" src="assets/img/eecs.png"/>
+				<img class="sponsor" src="assets/img/emax.jpg"/>
+				<img class="sponsor" src="assets/img/its.jpg"/>
+				<img class="sponsor" src="assets/img/tattu.png"/>
+				<img class="sponsor" src="assets/img/tmotor.jpg"/>
 			</div>
 		</div>
 		<div class="section footer">
@@ -37,25 +74,30 @@
 				<div class="mailing-container">
 
 				<!-- Begin MailChimp Signup Form -->
-				<div id="mc_embed_signup">
-				<form action="https://github.us17.list-manage.com/subscribe/post?u=bbdb8c68fd1e7155ff2078227&amp;id=3a107c701c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				    <div id="mc_embed_signup_scroll">
-					<label for="mce-EMAIL">Subscribe to our mailing list</label> <br/>
-					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bbdb8c68fd1e7155ff2078227_3a107c701c" tabindex="-1" value=""></div>
-				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-				    </div>
-				</form>
-				</div>
+<div id="mc_embed_signup">
+<form action="https://github.us17.list-manage.com/subscribe/post?u=bbdb8c68fd1e7155ff2078227&amp;id=3a107c701c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <label for="mce-EMAIL">Subscribe to our mailing list</label>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bbdb8c68fd1e7155ff2078227_3a107c701c" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
 				<!--End mc_embed_signup-->
 				</div>
 			</div>
 			<div class="right-container">
 				<div class="contact-container">
 					<div class="title">Contact Us</div>
-					<img class='icon email'></img>
-					<img class='icon fb'></img>
+
+					<div class="subtitle">For support or any questions:</div>
+					<div class="text"><a href="mailto:andreaskari@berkeley.edu">andreaskari@berkeley.edu</a></div>
+					<div class="subtitle">Berkeley, CA</div>
+					<div class='text'>UAVs@Berkeley</div>
+					<div class='text'>107A McLaughlin Hall</div>
+					<div class='text'>Berkeley, CA 94720</div>
 				</div>
 			</div>
 		</div>
