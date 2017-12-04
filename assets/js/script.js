@@ -69,7 +69,7 @@ for (person of peoples) {
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
     function checkReady() {
-        if (document.getElementsByClassName('person-headshot')[0] !== undefined) {
+        if (document.getElementsByClassName('splash')[0] !== undefined) {
             window.clearInterval(intervalID);
             callback.call(this);
         }
