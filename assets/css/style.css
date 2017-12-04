@@ -28,6 +28,10 @@ a {
     margin: 20px auto;
 }
 
+.drone-fill {
+    fill: #eee;
+}
+
 .organizers-container, .sponsor-container, .gallery-container{
     position: relative;
     width: 60%;

@@ -55,6 +55,8 @@ let emailSVG = '<svg class="icon email" id="Layer_1" data-name="Layer 1" xmlns="
 
 let linkedinSVG = '<svg class="icon linkedin" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486.39 486.39"><defs></defs><title>linkedin</title><path class="icon-background" d="M243.2,0C108.89,0,0,108.89,0,243.2s108.89,243.2,243.2,243.2,243.2-108.89,243.2-243.2S377.5,0,243.2,0ZM182.4,361H121.6V148.2h60.8ZM153.88,135.16a28.51,28.51,0,1,1,28.51-28.51A28.49,28.49,0,0,1,153.88,135.16ZM395.19,361h-60.8V229.43c0-15.41-4.41-26.2-23.35-26.2-31.4,0-37.45,26.2-37.45,26.2V361H212.8V148.2h60.8v20.34a101.69,101.69,0,0,1,60.8-20.31c19.7,0,60.8,11.79,60.8,83.05V361Z"/></svg>';
 
+let pastels=["#ffb3ba", "#ffdfba", "#ffffba", "#baffc9", "#bae1ff"];
+
 for (person of peoples) {
     $(".organizers-container").append(
         '<div class="person-container"><img class="person-headshot" src="' + person["pic"] + '"></img>'
@@ -77,37 +79,27 @@ function onReady(callback) {
 }
 
 $(document).ready( function() {
-
     onReady(function() {
         $('body').addClass('loaded');
     });
 
-    // For animating heading slide right
-    // $(window).scroll( function(){
-    
-    //     $('.hidden.left').each( function(i){
-    //         let bottom_of_object = $(this).offset().top;
-    //         let bottom_of_window = $(window).scrollTop() + parseInt($('.section').css("height"),10);
-    //         if( bottom_of_window > bottom_of_object ){
-    //             $(this).animate({'opacity':'1', "margin-left": "100px"},200);
-    //         }
-    //     }); 
-    // });
-
-function isScrolledIntoView(elem, window) {
-    var docViewTop = window.scrollTop();
-    var docViewBottom = docViewTop + screen.height;
-    var elemTop = elem.offset().top;
-    var elemBottom = elemTop + elem.height();
-    return ((elemBottom <= docViewBottom) && (elemBottom >= docViewTop));
-}
-$(document).on("scroll", function () {
-    scrolled.forEach( function(i){
-        if (isScrolledIntoView(i, $(window))) {
-            // i.animate({'opacity':'1', "margin-left": "100px"},800);
-            i.addClass("animate");
-        }
+    function isScrolledIntoView(elem, window) {
+        var docViewTop = window.scrollTop();
+        var docViewBottom = docViewTop + screen.height;
+        var elemTop = elem.offset().top;
+        var elemBottom = elemTop + elem.height();
+        return ((elemBottom <= docViewBottom) && (elemBottom >= docViewTop));
+    }
+    $(document).on("scroll", function () {
+        scrolled.forEach( function(i){
+            if (isScrolledIntoView(i, $(window))) {
+                // i.animate({'opacity':'1', "margin-left": "100px"},800);
+                i.addClass("animate");
+            }
+        });
     });
-});
 
+    $("#loader").on("click", function() {
+        $(".drone-fill").css("fill",  pastels[Math.floor(Math.random()*pastels.length)]);
+    });
 });
