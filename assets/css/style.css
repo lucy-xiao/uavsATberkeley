@@ -42,6 +42,7 @@ a {
 
 .sponsor-container {
     width: 90%;
+    text-align: center;
 }
 
 .gallery-container {
@@ -84,7 +85,7 @@ a {
     fill: #333;
 }
 
-.icon.linkedin .icon-background{
+.icon.linkedin-icon .icon-background{
     fill: #3498db;
 }
 
@@ -92,7 +93,7 @@ a {
     fill: #555;
 }
 
-.icon.linkedin .icon-background:hover{
+.icon.linkedin-icon .icon-background:hover{
     fill: #55aeea;
 }
 
@@ -176,34 +177,56 @@ a {
     padding-bottom: 20px;
 }
 
-.section.footer input#mc-embedded-subscribe{
-    border-radius: 5px;
+.section .clear {
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.section input#mc-embedded-subscribe{
+    
     background-color: #01579B;
     width: 200px;
     color: #eee;
     margin-right: 5px;
 }
 
-.section.footer .mailing-container, .section.footer .contact-container  {
+.section .mailing-container, .section.footer .contact-container  {
     position: relative;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     top: 10px;
+}
+
+.section .mailing-container {
+    text-align: center;
+    width: 90%;
 }
 
 .section.footer .contact-container {
     text-align: center;
 }
 
-.section.footer .email, .section.footer .button {
+.section.subscribe .email, .section .button {
     margin-top: 10px;
     border: none;
     padding: 5px 10px;
     font-size: .9em;
+    border-radius: 5px;
 }
 
-.section.footer label, .section.footer .title {
+.section.subscribe .email {
+    width: 50%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#mc_embed_signup {
+    margin-top:10px;
+}
+
+.section label, .section.footer .title {
     color: #eee;
     margin-right: 10px;
     font-size: 1.4em;
@@ -211,14 +234,12 @@ a {
 
 .section.footer .subtitle{
     font-size: 1.1em;
-    text-align: left;
     margin-top: 5px;
     color: #eee;
 }
 
 .section.footer .text, .section.footer a  {
     font-size: 1em;
-    text-align: left;
     color: #ccc;
 }
 

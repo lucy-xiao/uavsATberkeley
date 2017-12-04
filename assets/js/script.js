@@ -50,10 +50,10 @@ let peoples = [
         "title" : "Orchestrator"
     }
 ];
-let scrolled = [$("#about"), $("#organizers"), $("#gallery") ,$("#sponsors")];
-let emailSVG = '<svg class="icon email" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#fff;}</style></defs><title>email2</title><circle class="icon-background" cx="64" cy="64" r="64"/><path class="cls-1" d="M64,28"/><path class="cls-1" d="M64,72.4l38.2-32.7A4.1,4.1,0,0,0,100,39H28a4.1,4.1,0,0,0-2.2.7Z"/><path class="cls-1" d="M66.6,75.4a4,4,0,0,1-5.2,0L24,43.5V85a4,4,0,0,0,4,4h72a4,4,0,0,0,4-4V43.4Z"/></svg>';
+let scrolled = [$("#subscribe"), $("#about"), $("#organizers"), $("#gallery") ,$("#sponsors")];
+let emailSVG = '<svg class="icon email-icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#fff;}</style></defs><title>email2</title><circle class="icon-background" cx="64" cy="64" r="64"/><path class="cls-1" d="M64,28"/><path class="cls-1" d="M64,72.4l38.2-32.7A4.1,4.1,0,0,0,100,39H28a4.1,4.1,0,0,0-2.2.7Z"/><path class="cls-1" d="M66.6,75.4a4,4,0,0,1-5.2,0L24,43.5V85a4,4,0,0,0,4,4h72a4,4,0,0,0,4-4V43.4Z"/></svg>';
 
-let linkedinSVG = '<svg class="icon linkedin" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486.39 486.39"><defs></defs><title>linkedin</title><path class="icon-background" d="M243.2,0C108.89,0,0,108.89,0,243.2s108.89,243.2,243.2,243.2,243.2-108.89,243.2-243.2S377.5,0,243.2,0ZM182.4,361H121.6V148.2h60.8ZM153.88,135.16a28.51,28.51,0,1,1,28.51-28.51A28.49,28.49,0,0,1,153.88,135.16ZM395.19,361h-60.8V229.43c0-15.41-4.41-26.2-23.35-26.2-31.4,0-37.45,26.2-37.45,26.2V361H212.8V148.2h60.8v20.34a101.69,101.69,0,0,1,60.8-20.31c19.7,0,60.8,11.79,60.8,83.05V361Z"/></svg>';
+let linkedinSVG = '<svg class="icon linkedin-icon" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486.39 486.39"><defs></defs><title>linkedin</title><path class="icon-background" d="M243.2,0C108.89,0,0,108.89,0,243.2s108.89,243.2,243.2,243.2,243.2-108.89,243.2-243.2S377.5,0,243.2,0ZM182.4,361H121.6V148.2h60.8ZM153.88,135.16a28.51,28.51,0,1,1,28.51-28.51A28.49,28.49,0,0,1,153.88,135.16ZM395.19,361h-60.8V229.43c0-15.41-4.41-26.2-23.35-26.2-31.4,0-37.45,26.2-37.45,26.2V361H212.8V148.2h60.8v20.34a101.69,101.69,0,0,1,60.8-20.31c19.7,0,60.8,11.79,60.8,83.05V361Z"/></svg>';
 
 let pastels=["#ffb3ba", "#ffdfba", "#ffffba", "#baffc9", "#bae1ff"];
 
