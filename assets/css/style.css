@@ -36,6 +36,8 @@ a {
     position: relative;
     width: 60%;
     left: 50%;
+    -webkit-transform: translate(-50%, 20px);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translate(-50%, 20px);  /* IE 9 */
     transform: translate(-50%, 20px);
     padding-bottom: 50px;
 }
@@ -97,6 +99,35 @@ a {
     fill: #55aeea;
 }
 
+.landing .content {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translate(-50%, 0);  /* IE 9 */
+    transform: translate(-50%, 0%);
+}
+
+.landing .splash-presents {
+    color: #eee;
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.landing .uav {
+    top: 20px;
+    width: 50%;
+    left: 50%;
+}
+
+.landing .wdr {
+    opacity: 0;
+    top: 35%;
+    width: 90%;
+    /*opacity: .95;*/
+    animation: opacity-shift 1.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0.5s 1 forwards;
+}
+
 .person-container {
     display: inline-block;
     margin-left: 20px;
@@ -138,7 +169,16 @@ a {
 }
 
 .section.landing {
+    position: absolute;
+    top: 50%;
+    width: 85%;
+    left: 50%;
     padding-bottom: 0;
+    background: none;
+    opacity: 0.9;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .section.organizers {
@@ -249,26 +289,18 @@ a {
 }
 
 .splash {
-    background: url("../img/stadium-pano-min.jpg") no-repeat center center fixed;
+    background: url("../img/stadium-pano-min-min.jpg") no-repeat center center fixed;
     background-size: 250%;
     height: 100%;
     opacity: .85;
 }
 
-.splash-presents {
-    position: relative;
-    color:#eee;
-    font-size: 2em;
-    top:20px;
-}
-
 .splash-content-container {
     position: absolute;
-    width: auto;
-    text-align: center;
     top: 20px;
-    margin: 0 auto;
     left: 50%;
+    -webkit-transform: translate(-50%, 0%); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translate(-50%, 0%);/* IE 9 */
     transform: translate(-50%, 0%);
     opacity: .95;
 }
@@ -296,16 +328,6 @@ a {
     top:15px;
 }
 
-.wdr {
-    opacity: 0;
-    position: absolute;
-    top: 30%;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    /*opacity: .95;*/
-    animation: opacity-shift 1.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0.5s 1 forwards;
-}
 
 #campenilli {
     width: 30%;
